@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: My first action step
         run: echo "Hello, world!"
+      - name: Checking date and time
+        run: date
       - name: Print goodbye
         run: echo "Done - bye!"
     
