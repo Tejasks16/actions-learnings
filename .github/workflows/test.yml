@@ -1,5 +1,5 @@
 name: react-app-tests
-on: workflow_dispatch
+on: push
 jobs:
   test-app:
     runs-on: ubuntu-latest
