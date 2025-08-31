@@ -16,4 +16,8 @@ jobs:
           npm ci
       - name: Run tests
         run: npm test
+      - name: Build the app
+        run: npm run build
+      - name: Print goodbye
+        run: echo "Done - bye!"
       
