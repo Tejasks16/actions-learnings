@@ -21,6 +21,7 @@ jobs:
       - name: Print Test completion
         run: echo "Tests Completed with no errors!"
   deploy:
+    needs: testing
     runs-on: ubuntu-latest
     steps:
       - name: Get the code
