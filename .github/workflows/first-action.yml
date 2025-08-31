@@ -1,5 +1,5 @@
 name: my-first-action
-on: workflow_dispatch
+on: [push]
 jobs:
   my-job:
     runs-on: ubuntu-latest
@@ -10,4 +10,10 @@ jobs:
         run: date
       - name: Print goodbye
         run: echo "Done - bye!"
+      - name: Checking runner OS
+        run: |
+          echo "The runner OS is $RUNNER_OS"
+          echo "The runner name is $RUNNER_NAME"
+          echo "The runner temp directory is $RUNNER_TEMP"
+          echo "The runner workspace is $RUNNER_WORKSPACE"
     
