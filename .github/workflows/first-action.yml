@@ -1,5 +1,9 @@
 name: my-first-action
-on: [push]
+on: 
+  pull_request:
+    types:
+      - opened
+  workflow_dispatch:
 jobs:
   my-job:
     runs-on: ubuntu-latest
