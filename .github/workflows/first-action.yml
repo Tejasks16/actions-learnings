@@ -20,3 +20,4 @@ jobs:
           echo "The runner name is $RUNNER_NAME"
           echo "The runner temp directory is $RUNNER_TEMP"
           echo "The runner workspace is $RUNNER_WORKSPACE"
+          echo "The job id is $GITHUB_JOB"
